@@ -1,128 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
+body {
+  background-color: black;
+}
 
 .main-wrapper {
   height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
-  position: absolute;
-  top: 10;
+  display: flex;
+  overflow: hidden;
 }
 
+.heading-off {
+  display: none;
+}
+
+.logotyp {
+  color: rgba(175, 203, 255, 0.721);
+  font-family: 'Megrim', cursive;
+  font-size: calc(20rem + 5vw);
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.logotyp:hover {
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+}
+
+.navbar-brand {
+  font-family: 'Megrim', cursive;
+}
+
+.main-theme-half {
+  height: 50%;
+  width: 100%;
+  padding: 10px;
+}
+
+.main-theme-half--upper {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: -4;
+}
 .main-theme-half--lower {
   position: absolute;
   bottom: 0;
 }
 
-.heading {
-  color: rgba(38, 69, 126, 0.721);
-  font-family: 'Megrim', cursive;
-  font-size: calc(1.5rem + 5vw);
-  font-weight: 700;
-  text-align: center;
-}
-h1 {
-  padding: 10%;
-}
-
 h1 span {
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 h1:hover {
   cursor: pointer;
 }
 h1:hover span {
-  color: rgba(110, 157, 243, 0.721);
+  color: rgba(134, 175, 251, 0.721);
 
   text-shadow: 90px rgba(255, 0, 0, 0.4), 90px rgba(255, 0, 0, 0.4),
     90px rgba(255, 0, 0, 0.4), 90px rgba(255, 0, 0, 0.4);
 }
-.circle--normal {
-  background-color: rgba(187, 187, 187, 0.578);
-}
-.circle--hover {
-  background-color: rgba(110, 157, 243, 0.721);
-  cursor: pointer;
-}
-
-.blockquote {
-  position: absolute;
-  bottom: 0;
-  /* z-index: -2; */
-}
 
 .quote_text,
-.about_text {
+.about_text,
+.contact_text {
   width: 65%;
-  color: rgb(142, 142, 142);
+  color: rgb(132, 145, 186);
   padding: 10px;
   text-align: justify;
   text-justify: inter-word;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
   font-size: calc(0.3rem + 1vw);
-  padding-top: 10px;
 }
 .quote span {
-  color: rgb(44, 18, 101);
+  color: rgb(238, 238, 238);
 }
 .quote_source {
-  font-size: small;
-  color: rgb(59, 59, 59);
+  font-size: calc(0.2rem + 0.5vw);
+  color: rgb(87, 105, 159);
 }
 
 .contact-col {
   padding: 50px;
   color: rgb(98, 98, 98);
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
 }
 
 .email a {
-  color: brown;
+  color: rgb(87, 105, 159);
+  transition: 0.5s;
+}
+.email a:hover {
+  color: rgba(175, 203, 255, 0.721);
 }
 
 .fas {
   font-size: 30px;
-  color: rgb(144, 144, 144);
+  color: rgba(175, 203, 255, 0.721);
   text-justify: center;
-}
-
-#canvas {
-  position: absolute;
-  top: 10;
-  z-index: -2;
-  width: 100%;
+  padding: 20px;
 }
 
 #text h1 {
   opacity: 0.9;
-}
-
-/* points mask*/
-.points-mask {
-  width: 100%;
-  height: 70%;
-  z-index: -1;
-  top: 30%;
-  margin-top: 5%;
-}
-
-.circle {
-  height: 0.7vh;
-  width: 0.7vh;
-  border-radius: 50%;
-  margin: 5%;
-  transition: 0.5s;
-}
-
-.small {
-  height: 1vh;
-  width: 1vh;
-}
-
-.big {
-  height: 2.5vh;
-  width: 2.5vh;
 }
 
 /* media  */
@@ -138,4 +125,105 @@ h1:hover span {
   .main-theme-half--lower {
     margin-top: 30px;
   }
+}
+
+/* STARS DIV */
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+.circle,
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.stars {
+  background: #000 url(../img/stars.png) repeat center center;
+  z-index: -5;
+}
+.twinkling {
+  background: transparent url(../img/twinkling.png) repeat top center;
+  z-index: -1;
+  -moz-animation: move-twink-back 400s linear infinite;
+  -ms-animation: move-twink-back 400s linear infinite;
+  -o-animation: move-twink-back 400s linear infinite;
+  -webkit-animation: move-twink-back 400s linear infinite;
+  animation: move-twink-back 400s linear infinite;
+}
+.clouds {
+  background: transparent url(images/clouds.png) repeat top center;
+  z-index: 3;
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
 }

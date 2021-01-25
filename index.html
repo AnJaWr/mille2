@@ -33,156 +33,138 @@
 </head>
 
 <body>
-    <div class="main-wrapper container-fluid d-flex justify-content-center flex-nowrap" id="main">
 
-        <!-- 1. MAIN THEME UPPER CONTAINER 
+
+    <!-- 2. 1. MAIN THEME UPPER CONTAINER 
         ========================================================================= -->
+    <!-- 1. HEADER -->
+    <header class="site-header" role="banner">
+        <!-- 1.1. NAVBAR  ================================================= -->
 
-        <!-- 2. CANVA-->
-        <canvas id="canvas"></canvas>
-        <!-- 3. POINT DIV MASK-->
-        <div class="points-mask container">
-            <div class="row row-cols-4 circles-row">
-                <div class="col zoomTarget d-flex" data-targetsize="1" data-duration="600">
-                    <div class="circle circle--normal small align-self-center">
-                        <div class="about_text" id="about_text">
-                            <p>MILLEDION is a strategic communication agency, offering comprehensive,
-                                tailor-made PR
-                                &
-                                PA services for enterprises and
-                                public sector. Its strength derives from a deep listening of the client and
-                                insight
-                                in
-                                its market and public
-                                environment.</p>
-                            <p>As an independent, specialized agency MILLEDION cooperates with reliable and
-                                responsible
-                                professionals with 15 years of
-                                experience in the field of strategy-driven, creative & effective execution,
-                                in
-                                Poland
-                                and abroad.</p>
+        <div class="navbar-wrapper">
+            <nav class="navbar navbar-expand-lg  navbar-dark bg-dark navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <a class="navbar-brand mb-0 h1">milledion</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="d-flex flex-row-reverse">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" id="home-btn" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="about-btn" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-btn" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">Blog</a>
+                                </li>
+
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class=" col  zoomTarget d-flex" data-targetsize="1" data-duration="600">
-                    <div class="circle  align-self-start"></div>
-                    <div class=" circle  align-self-center justify-self-center"></div>
-                </div>
-                <div class="col zoomTarget d-flex" data-targetsize="1" data-duration="600">
-                    <div class="circle "></div>
-                </div>
-                <div class="col zoomTarget d-flex" data-targetsize="1" data-duration="600">
-                    <div class="circle small"></div>
-                    <div class="circle  big">
-                        <!-- contact-->
-                        <div class="contact_text" display-none id="contact_text">
-                            <div class="row">
-                                <div class="col-6 contact-col">
-                                    <i class="fas fa-phone-alt"></i>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
 
-                                    <p class="Phone"><span>Tel:</span> +48 602 625 355</p>
-                                    <p class="email">E-mail: <a
-                                            href="mailto:office@milledion.pl">office@milledion.pl</a>
-                                    </p>
-                                </div>
-                                <div class="col-6 contact-col">
-                                    <i class="fas fa-home"></i>
-                                    <p>Q22 OFFICE - WARSAW </p>
-                                    <p>(by prior appointment only) </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex justify-items-center">
-                <!-- heading h1-->
-                <div>
-                    <!-- <div class="container-fluid heading-div d-flex justify-content-center align-self-center" id="text"> -->
-                    <h1 class="heading" id="heading">
-                        <span>m</span>
-                        <span>i</span>
-                        <span>l</span>
-                        <span>l</span>
-                        <span>e</span>
-                        <span>d</span>
-                        <span>i</span>
-                        <span>o</span>
-                        <span>n</span>
-                    </h1>
-                </div>
-            </div>
+    <div class="container-fluid main-wrapper d-flex">
 
-            <div class="row row-cols-4 circles-row">
-                <div class="col zoomTarget d-flex" data-targetsize="1" data-duration="600">
-                    <div class="circle align-self-start"></div>
-                </div>
-                <div class="col zoomTarget d-flex" data-targetsize="1" data-duration="600">
-                    <div class="circle "></div>
-                </div>
-                <div class="col zoomTarget d-flex" data-targetsize="1" data-duration="600">
-                </div>
-                <div class="col zoomTarget d-flex" data-targetsize="1" data-duration="600">
-                    <div class="circle"></div>
-                </div>
-            </div>
-            <div class="row row-cols-4 circles-row">
-                <div class="col">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
 
-                </div>
-                <div class="col">
-                </div>
-                <div class="col zoomTarget d-flex" data-targetsize="1" data-duration="600">
-                    <div class="circle align-self-center justify-self-center big"></div>
-                </div>
-                <div class="col zoomTarget d-flex" data-targetsize="1" data-duration="600">
-                    <div class="circle align-self-end justify-self-end big"></div>
-                </div>
-            </div>
-
-
-
-
+        <h1 class="heading-off">milledion</h1>
+        <div class="container-fluid d-flex justify-content-center">
+            <h2 class="logotyp" id="heading">
+                <span>m</span>
+            </h2>
 
             <!-- 2.2 MAIN THEME lower CONTAINER 
+                ========================================================================= -->
+            <div class="main-theme-half main-theme-half--lower  d-flex  justify-content-center align-items-lg-center align-items-sm-start 
+                          align-items-md-start container-fluid" id="lower">
+                <!-- 2. motto 
         ========================================================================= -->
-            <!-- <div class="main-theme-half main-theme-half--lower  d-flex  justify-content-center align-items-lg-center align-items-sm-start 
-                  align-items-md-start container-fluid" id="lower"> -->
-            <!-- 2. motto 
-========================================================================= -->
-            <div class=" container-fluid quote_text" id="quote_text">
-                <span class="quote">"When Napoleon said, <span>"Circumstance? I make circumstance"</span>‚ he expressed
-                    very
-                    nearly the spirit of the public relations"</span>
-                <span class="quote_source float-end">E. Bernays, <i>Crystallizing Public
-                        Opinion</i>,
-                    1923
+                <div class="blockquote quote_text" id="quote_text"> <span class="quote">"When
+                        Napoleon
+                        said,
+                        <span>"Circumstance? I make
+                            circumstance"</span>‚
+                        he expressed
+                        very nearly the spirit of the public relations"</span>
+                    <span class="quote_source float-end">E. Bernays, <i>Crystallizing Public
+                            Opinion</i>,
+                        1923
+                </div>
+                <!--3. ABOUT US  =========================================================================  -->
+                <div class="about_text" id="about_text">
+                    <p>MILLEDION is a strategic communication agency, offering comprehensive,
+                        tailor-made PR
+                        &
+                        PA services for enterprises and
+                        public sector. Its strength derives from a deep listening of the client and
+                        insight
+                        in
+                        its market and public
+                        environment.</p>
+                    <p>As an independent, specialized agency MILLEDION cooperates with reliable and
+                        responsible
+                        professionals with 15 years of
+                        experience in the field of strategy-driven, creative & effective execution,
+                        in
+                        Poland
+                        and abroad.</p>
+                </div>
+
+
+                <!-- 4. Contact 
+        =========================================================================  -->
+                <div class="contact_text" id="contact_text">
+
+                    <div class="row">
+                        <div class="col-6 contact-col">
+                            <i class="fas fa-phone-alt"></i>
+
+                            <p class="Phone"><span>Tel:</span> +48 602 625 355</p>
+                            <p class="email">E-mail: <a href="mailto:office@milledion.pl">office@milledion.pl</a>
+                            </p>
+                        </div>
+
+                        <div class="col-6 contact-col">
+                            <i class="fas fa-home"></i>
+                            <p>Q22 OFFICE - WARSAW </p>
+                            <p>(by prior appointment only) </p>
+
+                        </div>
+                    </div>
+
+                    <!-- </section>
+             -->
+                </div>
             </div>
+
+
         </div>
-        <!--3. ABOUT US  =========================================================================  -->
 
 
 
-        <!-- 4. Contact 
-=========================================================================  -->
-
-    </div>
-
-
-
-    </div>
-
-    <!-- Bootstrap core JavaScript
+        <!-- Bootstrap core JavaScript
         ================================================== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/logo_animation_canvas.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/connecting_poits.js"></script>
-
-    <script src="assets/js/jquery.zoomooz.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="assets/js/jquery-3.5.1.min.js"></script>
+        <script src="assets/js/dots.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- <script src="assets/js/logo_animation_canvas.js"></script> -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/jquery.zoomooz.min.js"></script>
 
 
 </body>
