@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 
-body {
-  background-color: black;
-}
-
 .main-wrapper {
   height: 100%;
   width: 100%;
@@ -193,7 +189,7 @@ h1:hover span {
     background-position: 10000px 0;
   }
 }
-.circle,
+.mask-gradient,
 .stars,
 .twinkling,
 .clouds {
@@ -206,13 +202,27 @@ h1:hover span {
   height: 100%;
   display: block;
 }
+
+.mask-gradient {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 75%,
+    rgba(4, 119, 143, 1) 100%
+  );
+  opacity: 0.4;
+  z-index: -2;
+}
+
 .stars {
   background: #000 url(../img/stars.png) repeat center center;
-  z-index: -5;
+  z-index: -6;
 }
 .twinkling {
   background: transparent url(../img/twinkling.png) repeat top center;
-  z-index: -1;
+  backface-visibility: visible;
+  z-index: -3;
   -moz-animation: move-twink-back 400s linear infinite;
   -ms-animation: move-twink-back 400s linear infinite;
   -o-animation: move-twink-back 400s linear infinite;
