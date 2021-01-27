@@ -21,13 +21,17 @@ body {
 .logotyp {
   color: rgba(175, 203, 255, 0.721);
   font-family: 'Megrim', cursive;
-  font-size: calc(10rem + 5vw);
+  font-size: calc(16rem + 5vw);
   font-weight: 700;
   transition: 0.5s;
 }
 
 .logotyp:hover {
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+
+.logotyp-box {
+  height: 100%;
 }
 
 .navbar-brand {
@@ -47,8 +51,8 @@ body {
   z-index: -4;
 }
 .main-theme-half--lower {
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  bottom: 5%;
 }
 
 h1 span {
@@ -73,7 +77,8 @@ h1:hover span {
   text-align: justify;
   text-justify: inter-word;
   font-family: 'Reem Kufi', sans-serif;
-  font-size: calc(0.3rem + 1vw);
+  font-size: calc(0.3rem + 0.8vw);
+  align-self: flex-end;
 }
 .quote span {
   color: rgb(197, 197, 197);
@@ -207,10 +212,12 @@ h1:hover span {
 }
 
 .mask-shadow-left {
-  justify-self: start;
+  justify-self: flex-start;
+  align-self: flex-end;
 }
 .mask-shadow-right {
   justify-self: flex-end;
+  align-self: flex-end;
 }
 
 .mask-gradient {
