@@ -247,7 +247,7 @@ h1:hover span {
   height: calc(100% + 50vh);
   width: calc(100% + 50vh);
   border-radius: 50%;
-  background-image: url(/assets/img/stars.png);
+  background-image: url(../img/stars.png);
   background-size: contain;
   background-position: center;
   display: flex;
