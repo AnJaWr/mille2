@@ -208,16 +208,13 @@ h1:hover span {
   max-width: 100%;
 }
 .mask-shadow-center {
-  align-self: flex-end;
 }
 
 .mask-shadow-left {
-  justify-self: flex-start;
-  align-self: flex-end;
+  float: left;
 }
 .mask-shadow-right {
-  justify-self: flex-end;
-  align-self: flex-end;
+  float: right;
 }
 
 .mask-gradient {
