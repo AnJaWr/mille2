@@ -11,7 +11,6 @@ body {
   margin: 0;
   display: block;
   flex-wrap: nowrap;
-  overflow: hidden;
 }
 
 .heading-off {
@@ -44,12 +43,12 @@ body {
   padding: 10px;
 }
 
-.main-theme-half--upper {
+/* .main-theme-half--upper {
   padding: 0;
   margin: 0;
   position: relative;
   z-index: -4;
-}
+} */
 .main-theme-half--lower {
   position: absolute;
   bottom: 5%;
@@ -207,8 +206,6 @@ h1:hover span {
 .mask-shadow img {
   max-width: 100%;
 }
-.mask-shadow-center {
-}
 
 .mask-shadow-left {
   float: left;
@@ -225,7 +222,6 @@ h1:hover span {
   bottom: 0;
   width: 100%;
   height: 100%;
-
   background: rgb(1, 8, 36);
   background: radial-gradient(
     at 40% -10%,
@@ -237,11 +233,54 @@ h1:hover span {
   opacity: 0.5;
   z-index: -2;
 }
-
-.stars {
-  background: #000 url(../img/stars.png) repeat center center;
-  z-index: -6;
+.sky {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: -5;
 }
+.stars {
+  height: calc(100% + 50vh);
+  width: calc(100% + 50vh);
+  border-radius: 50%;
+  background-image: url(/assets/img/stars.png);
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: spin 100s linear infinite;
+  -moz-animation: spin 100s linear infinite;
+  animation: spin 100s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: brown;
+  position: relative;
+}
+
 .twinkling {
   background: transparent url(../img/twinkling.png) repeat top center;
   backface-visibility: visible;
