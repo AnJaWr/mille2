@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 
 * {
-  -moz-transform-origin: unset;
-  -webkit-transform-origin: unset;
-  -o-transform-origin: unset;
-  -ms-transform-origin: unset;
-  transform-origin: unset;
+  -moz-transform-origin: unset !important;
+  -webkit-transform-origin: unset !important;
+  -o-transform-origin: unset !important;
+  -ms-transform-origin: unset !important;
+  transform-origin: unset !important;
 }
 body {
   background-color: #000;
