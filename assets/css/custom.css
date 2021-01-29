@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
+* {
+  -moz-transform-origin: unset;
+  -webkit-transform-origin: unset;
+  -o-transform-origin: unset;
+  -ms-transform-origin: unset;
+  transform-origin: unset;
+}
 body {
   background-color: #000;
 }
@@ -229,7 +237,7 @@ h1:hover span {
     rgba(11, 20, 61, 1) 48%,
     rgba(30, 51, 138, 1) 100%
   );
-  opacity: 0.5;
+  opacity: 0.1;
   z-index: -2;
 }
 .sky {
@@ -252,9 +260,9 @@ h1:hover span {
   position: relative;
   align-items: center;
   justify-content: center;
-  -webkit-animation: spin 100s linear infinite;
-  -moz-animation: spin 100s linear infinite;
-  animation: spin 100s linear infinite;
+  -webkit-animation: spin 150s linear infinite;
+  -moz-animation: spin 150s linear infinite;
+  animation: spin 150s linear infinite;
 }
 @-moz-keyframes spin {
   100% {
