@@ -21,16 +21,24 @@ body {
   flex-wrap: nowrap;
 }
 
-.heading-off {
+/* .heading-off {
   display: none;
-}
+} */
 
 .logotyp {
   color: rgba(175, 203, 255, 0.721);
   font-family: 'Megrim', cursive;
-  font-size: calc(16rem + 5vw);
+  font-size: calc(1rem + 2vw);
   font-weight: 700;
-  transition: 0.5s;
+  opacity: 0;
+  -webkit-animation: fadeLogo 1s infinite; /* Safari 4+ */
+  -moz-animation: fadeLogo 1s infinite; /* Fx 5+ */
+  -o-animation: fadeLogo 1s infinite; /* Opera 12+ */
+  animation: fadeLogo 1s infinite; /* IE 10+, Fx 29+ */
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+
+  transition: 0.5;
 }
 
 .logotyp:hover {
@@ -156,41 +164,8 @@ h1:hover span {
     background-position: -10000px 5000px;
   }
 }
-@keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 10000px 0;
-  }
-}
-@-webkit-keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 10000px 0;
-  }
-}
-@-moz-keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 10000px 0;
-  }
-}
-@-ms-keyframes move-clouds-back {
-  from {
-    background-position: 0;
-  }
-  to {
-    background-position: 10000px 0;
-  }
-}
 
-.twinkling,
-.clouds {
+.twinkling {
   position: absolute;
   top: 0;
   left: 0;
@@ -372,5 +347,68 @@ h1:hover span {
   }
   .fas {
     font-size: calc(0.5rem + 1.5vw);
+  }
+}
+
+#path {
+  stroke-dasharray: 1500;
+  -webkit-animation: dash 10s linear forwards;
+  -moz-animation: dash 10s linear forwards;
+  animation: dash 10s linear forwards;
+}
+/* #logo_text {
+  opacity: 0;
+  animation: fadein 6s 2s;
+} */
+
+@-webkit-keyframes fadeLogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeLogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeLogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeLogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1500;
+    stroke-width: 1;
+  }
+  70% {
+    stroke-width: 1;
+  }
+  80% {
+    stroke-width: 1;
+  }
+  90% {
+    stroke-width: 1;
+  }
+  100% {
+    stroke-width: 1;
   }
 }
