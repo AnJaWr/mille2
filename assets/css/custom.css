@@ -21,24 +21,16 @@ body {
   flex-wrap: nowrap;
 }
 
-/* .heading-off {
+.heading-off {
   display: none;
-} */
+}
 
 .logotyp {
   color: rgba(175, 203, 255, 0.721);
   font-family: 'Megrim', cursive;
-  font-size: calc(1rem + 2vw);
+  font-size: calc(16rem + 5vw);
   font-weight: 700;
-  opacity: 0;
-  -webkit-animation: fadeLogo 1s infinite; /* Safari 4+ */
-  -moz-animation: fadeLogo 1s infinite; /* Fx 5+ */
-  -o-animation: fadeLogo 1s infinite; /* Opera 12+ */
-  animation: fadeLogo 1s infinite; /* IE 10+, Fx 29+ */
-  animation-iteration-count: 1;
-  animation-delay: 2s;
-
-  transition: 0.5;
+  transition: 0.5s;
 }
 
 .logotyp:hover {
