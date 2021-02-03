@@ -7,23 +7,23 @@ $(document).ready(function () {
   $two.hide();
   $three.hide();
 
-  // $('#heading').click(function () {
-  //   var $in, $out1, $out2;
-  //   if ($one.is(':visible')) {
-  //     ($in = $two), ($out1 = $one), ($out2 = $three);
-  //   } else {
-  //     ($in = $one), ($out1 = $two), ($out2 = $three);
-  //   }
-  //   $($out1, $out2).fadeOut('slow', function () {
-  //     $in.fadeIn();
-  //   });
+  $('#heading').click(function () {
+    var $in, $out1, $out2;
+    if ($one.is(':visible')) {
+      ($in = $two), ($out1 = $one), ($out2 = $three);
+    } else {
+      ($in = $one), ($out1 = $two), ($out2 = $three);
+    }
+    $($out1, $out2).fadeOut('slow', function () {
+      $in.fadeIn();
+    });
 
-  //   if (($two, $one).is(':visible')) {
-  //     $three.hide();
-  //   }
+    if (($two, $one).is(':visible')) {
+      $three.hide();
+    }
 
-  //   $three.hide();
-  // });
+    $three.hide();
+  });
 
   $('#about-btn').click(function () {
     var $in, $out1, $out2;
