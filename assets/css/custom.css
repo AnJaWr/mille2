@@ -50,13 +50,6 @@ body {
   width: 100%;
   padding: 10px;
 }
-
-/* .main-theme-half--upper {
-  padding: 0;
-  margin: 0;
-  position: relative;
-  z-index: -4;
-} */
 .main-theme-half--lower {
   position: absolute;
   bottom: 5%;
@@ -200,28 +193,28 @@ h1:hover span {
   background: rgb(7, 20, 38);
   background: -moz-radial-gradient(
     top,
-    ellipse cover,
-    rgb(7, 20, 38) 9%,
-    rgb(30, 87, 153) 40%,
-    rgb(32, 124, 202) 58%,
-    rgb(32, 124, 202) 76%,
+    circle cover,
+    rgb(7, 20, 38) 45%,
+    rgb(20, 63, 111) 66%,
+    rgb(30, 87, 153) 76%,
+    rgb(32, 124, 202) 86%,
     rgb(242, 229, 130) 100%
   );
   background: -webkit-radial-gradient(
     top,
-    ellipse cover,
-    rgb(7, 20, 38) 9%,
-    rgb(30, 87, 153) 40%,
-    rgb(32, 124, 202) 58%,
-    rgb(32, 124, 202) 76%,
+    circle cover,
+    rgb(7, 20, 38) 45%,
+    rgb(20, 63, 111) 66%,
+    rgb(30, 87, 153) 76%,
+    rgb(32, 124, 202) 86%,
     rgb(242, 229, 130) 100%
   );
   background: radial-gradient(
-    ellipse at top,
-    rgb(7, 20, 38) 9%,
-    rgb(30, 87, 153) 40%,
-    rgb(32, 124, 202) 58%,
-    rgb(32, 124, 202) 76%,
+    circle at top,
+    rgb(7, 20, 38) 45%,
+    rgb(20, 63, 111) 66%,
+    rgb(30, 87, 153) 76%,
+    rgb(32, 124, 202) 86%,
     rgb(242, 229, 130) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#071426', endColorstr='#f2e582',GradientType=1 );
@@ -438,8 +431,10 @@ h1:hover span {
 /* RESPONSIVE  */
 @media (max-width: 650px) {
   .quote_text,
+  .contact_text,
   .about_text {
     width: 100%;
+    font-size: calc(0.8rem + 0.8vw);
   }
   .main-theme-half--upper {
     height: 40%;
@@ -455,5 +450,18 @@ h1:hover span {
   }
   .fas {
     font-size: calc(0.5rem + 1.5vw);
+  }
+  .blockquote {
+    align-self: flex-start;
+    /* padding-top: 15%; */
+  }
+  .main-theme-half {
+    position: relative;
+  }
+  .logotyp {
+    font-size: calc(10rem + 5vw);
+  }
+  .constelation-svg {
+    width: 80%;
   }
 }
