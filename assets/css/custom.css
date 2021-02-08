@@ -10,6 +10,7 @@
 }
 body {
   background-color: #000;
+  width: 100vw;
 }
 
 .main-wrapper {
@@ -41,8 +42,9 @@ body {
 }
 
 .logotyp-box {
-  height: 100%;
-  position: relative;
+  /* height: 100%; */
+  /* width: 30%; */
+  /* position: absolute; */
   padding-left: 5%;
 }
 
@@ -54,10 +56,11 @@ body {
   height: 50%;
   width: 100%;
   padding: 10px;
+  position: relative;
 }
 .main-theme-half--lower {
-  position: absolute;
-  bottom: 5%;
+  /* position: absolute;
+  bottom: 5%; */
 }
 
 h1 span {
@@ -123,12 +126,13 @@ h1:hover span {
 
 /* blog section */
 .blog {
+  position: relative;
   min-height: 80%;
+  max-height: auto;
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
-  position: fixed;
-  top: 1;
+
   left: 0;
   right: 0;
   z-index: 10;
@@ -313,14 +317,18 @@ h1:hover span {
 }
 
 .sky {
-  height: 90%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
   display: flex;
   position: absolute;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   z-index: -5;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 .stars {
   height: calc(100% + 50vh);
@@ -338,10 +346,7 @@ h1:hover span {
 }
 
 .constelation-svg {
-  position: absolute;
-  top: 10;
-  height: 60%;
-  width: 60%;
+  width: 80%;
   align-items: center;
   justify-content: center;
   -webkit-animation: spin 200s linear infinite;
@@ -499,6 +504,7 @@ svg {
   .about_text {
     width: 100%;
     font-size: calc(0.8rem + 0.8vw);
+    padding-top: 10vh;
   }
   .main-theme-half--upper {
     height: 40%;
@@ -519,8 +525,9 @@ svg {
     align-self: flex-start;
     /* padding-top: 15%; */
   }
-  .main-theme-half {
-    position: relative;
+  .logotyp-box {
+    padding-bottom: 20px;
+    margin-bottom: 20%;
   }
   .logotyp {
     font-size: calc(10rem + 5vw);
@@ -560,4 +567,10 @@ svg {
     -moz-animation: dusk 50s ease infinite alternate;
     animation: dusk 50s ease infinite alternate;
   }
+  .main-theme-half--lower {
+    margin-top: 20px;
+  }
+  /* .logotyp-box {
+    position: relative;
+  } */
 }
