@@ -28,7 +28,7 @@ body {
 .logotyp {
   color: rgba(175, 203, 255, 0.721);
   font-family: 'Megrim', cursive;
-  font-size: calc(16rem + 5vw);
+  font-size: calc(10rem + 5vw);
   font-weight: 700;
   transition: 0.5s;
 }
@@ -39,6 +39,8 @@ body {
 
 .logotyp-box {
   height: 100%;
+  position: relative;
+  padding-left: 5%;
 }
 
 .navbar-brand {
