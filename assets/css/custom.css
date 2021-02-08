@@ -127,7 +127,12 @@ h1:hover span {
   width: 90vw;
   top: 5vh;
   z-index: 10;
-  background-color: rgba(9, 9, 34, 0.748);
+  background-color: rgba(0, 10, 35, 0.6);
+}
+
+.blog-content {
+  color: rgba(175, 203, 255, 0.721);
+  padding: 20px;
 }
 
 /* STARS DIV */
@@ -231,7 +236,7 @@ h1:hover span {
     top,
     ellipse cover,
     hsl(222.86, 100%, 15.1%) 0%,
-    hsl(222.07, 98.68%, 15.88%) 4.6%,
+    rgb(6, 26, 78) 4.6%,
     hsl(220.97, 96.89%, 17.08%) 9.7%,
     hsl(219.7, 94.9%, 18.65%) 15.2%,
     hsl(218.38, 92.92%, 20.53%) 21.1%,

@@ -3,7 +3,13 @@ $(document).ready(function () {
 
   $('.navigation-button').click(function () {
     $('.section').hide(); //hide
-    $('.' + $(this).data('id')).fadeIn();
+    $('.' + $(this).data('id')).fadeIn(1000);
+
+    if ($('.blog').is(':visible')) {
+      $('#heading').fadeTo(300, 0);
+    } else {
+      $('#heading').fadeTo(500, 1);
+    }
   });
 
   $('.points-mask').hover(function () {
