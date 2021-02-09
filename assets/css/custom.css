@@ -42,10 +42,7 @@ body {
 }
 
 .logotyp-box {
-  /* height: 100%; */
-  /* width: 30%; */
-  /* position: absolute; */
-  padding-left: 5%;
+  /* padding-left: 5%; */
 }
 
 .navbar-brand {
@@ -122,26 +119,6 @@ h1:hover span {
 
 #text h1 {
   opacity: 0.9;
-}
-
-/* blog section */
-.blog {
-  position: relative;
-  min-height: 80%;
-  max-height: auto;
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
-
-  left: 0;
-  right: 0;
-  z-index: 10;
-  background-color: rgba(0, 10, 35, 0.6);
-}
-
-.blog-content {
-  color: rgba(175, 203, 255, 0.721);
-  padding: 20px;
 }
 
 /* STARS DIV */
@@ -346,20 +323,22 @@ h1:hover span {
 }
 
 .constelation-svg {
-  width: 80%;
+  width: 420pt;
+  height: 300pt;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   -webkit-animation: spin 200s linear infinite;
   -moz-animation: spin 200s linear infinite;
-  animation: spin 200s linear infinite;
+  animation: spin 150s linear infinite;
   z-index: -3;
   opacity: 0.5;
 }
 
-svg {
+/* svg {
   max-width: 100vw;
   max-height: 100vh;
-}
+} */
 @-moz-keyframes spin {
   100% {
     -moz-transform: rotate(360deg);
@@ -573,4 +552,8 @@ svg {
   /* .logotyp-box {
     position: relative;
   } */
+
+  .constelation-svg {
+    display: none;
+  }
 }

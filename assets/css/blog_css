@@ -1,0 +1,20 @@
+
+/* blog section */
+.blog {
+  position: relative;
+  min-height: 80vh;
+  max-height: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(0, 10, 35, 0.6);
+}
+
+.blog-content {
+  color: rgba(175, 203, 255, 0.721);
+  padding: 20px;
+}
