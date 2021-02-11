@@ -8,11 +8,9 @@
   -ms-transform-origin: unset !important;
   transform-origin: unset !important;
 }
+
 body {
   background-color: #000;
-  /* width: 100vw;
-  height: 100vh; */
-  overflow: hidden;
 }
 
 .main-wrapper {
@@ -20,15 +18,17 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  display: block;
-  flex-wrap: nowrap;
 }
 
 .heading-off {
   display: none;
 }
 .section {
+  position: absolute;
+  top: 10%;
   display: none;
+  left: 0;
+  right: 0;
 }
 
 .logotyp {
@@ -43,23 +43,25 @@ body {
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
 }
 
-.logotyp-box {
-  /* padding-left: 5%; */
+.navigation {
+  position: absolute;
+  padding-top: 10px;
+  bottom: 5px;
 }
 
+.navigation-list {
+  display: inline;
+  list-style: none;
+}
+
+.navigation ul {
+  padding: 0;
+}
+.navigation-list li {
+  display: inline;
+}
 .navbar-brand {
   font-family: 'Megrim', cursive;
-}
-
-.main-theme-half {
-  height: 50%;
-  width: 100%;
-  padding: 10px;
-  position: relative;
-}
-.main-theme-half--lower {
-  /* position: absolute;
-  bottom: 5%; */
 }
 
 h1 span {
@@ -74,7 +76,7 @@ h1:hover span {
   text-shadow: 90px rgba(255, 0, 0, 0.4), 90px rgba(255, 0, 0, 0.4),
     90px rgba(255, 0, 0, 0.4), 90px rgba(255, 0, 0, 0.4);
 }
-
+.blog_text,
 .quote_text,
 .about_text,
 .contact_text {
@@ -85,7 +87,6 @@ h1:hover span {
   text-justify: inter-word;
   font-family: 'Reem Kufi', sans-serif;
   font-size: calc(0.3rem + 0.8vw);
-  align-self: flex-end;
 }
 .quote_text .qspan {
   color: rgb(119, 157, 245);
@@ -113,10 +114,14 @@ h1:hover span {
 }
 
 .fas {
-  font-size: 30px;
+  font-size: 1.5em;
   color: rgba(175, 203, 255, 0.721);
   text-justify: center;
   padding: 20px;
+}
+
+.fas:hover {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
 }
 
 #text h1 {
@@ -218,7 +223,8 @@ h1:hover span {
     hsl(211.09, 83.32%, 40.11%) 77.1%,
     hsl(210.65, 82.8%, 42.29%) 84.7%,
     hsl(210.28, 82.38%, 44.24%) 92.4%,
-    hsl(210, 82.05%, 45.88%) 100%
+    hsl(210, 82.05%, 45.88%) 100%,
+    rgb(233, 245, 182) 100%
   );
   background: -webkit-radial-gradient(
     top,
@@ -273,25 +279,25 @@ h1:hover span {
     opacity: 0.3;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }
 @-webkit-keyframes dusk {
   0%,
   100% {
-    opacity: 0.35;
+    opacity: 0.3;
   }
   50% {
-    opacity: 0.55;
+    opacity: 0.7;
   }
 }
 @keyframes dusk {
   0%,
   100% {
-    opacity: 0.35;
+    opacity: 0.3;
   }
   50% {
-    opacity: 0.55;
+    opacity: 0.7;
   }
 }
 
@@ -324,23 +330,14 @@ h1:hover span {
   z-index: -2;
 }
 
-.constelation-svg {
-  width: 420pt;
-  height: 300pt;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-  -webkit-animation: spin 200s linear infinite;
-  -moz-animation: spin 200s linear infinite;
+.svg_animation {
+  -webkit-animation: spin 150s linear infinite;
+  -moz-animation: spin 150s linear infinite;
   animation: spin 150s linear infinite;
-  z-index: -3;
-  opacity: 0.5;
+  z-index: -5;
+  padding-bottom: 10px;
 }
 
-/* svg {
-  max-width: 100vw;
-  max-height: 100vh;
-} */
 @-moz-keyframes spin {
   100% {
     -moz-transform: rotate(360deg);
@@ -375,70 +372,12 @@ h1:hover span {
   animation: move-twink-back 400s linear infinite;
 }
 
-#path {
-  stroke-dasharray: 1500;
-  -webkit-animation: dash 10s linear forwards;
-  -moz-animation: dash 10s linear forwards;
-  animation: dash 10s linear forwards;
-}
-
-@-webkit-keyframes fadeLogo {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeLogo {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadeLogo {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeLogo {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes dash {
-  0% {
-    stroke-dashoffset: 1500;
-    stroke-width: 1;
-  }
-  70% {
-    stroke-width: 1;
-  }
-  80% {
-    stroke-width: 1;
-  }
-  90% {
-    stroke-width: 1;
-  }
-  100% {
-    stroke-width: 1;
-  }
-}
-
 /* CONSTELATION ANIMATION*/
-
-.animation {
+.patch {
   stroke-dasharray: 1500;
-  animation: dash 10s ease-out;
+  -webkit-animation: dash 20s linear infinite;
+  -moz-animation: dash 20s linear infinite;
+  animation: dash 20s linear infinite;
 }
 
 @keyframes dash {
@@ -480,12 +419,19 @@ h1:hover span {
 
 /* RESPONSIVE  */
 @media (max-width: 650px) {
+  .blog_text,
   .quote_text,
   .contact_text,
   .about_text {
-    width: 100%;
-    font-size: calc(0.8rem + 0.8vw);
+    width: 80%;
+    font-size: calc(0.5rem + 0.5vw);
     padding-top: 10vh;
+  }
+
+  .navigation {
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
   }
   .main-theme-half--upper {
     height: 40%;
@@ -550,12 +496,5 @@ h1:hover span {
   }
   .main-theme-half--lower {
     margin-top: 20px;
-  }
-  /* .logotyp-box {
-    position: relative;
-  } */
-
-  .constelation-svg {
-    display: none;
   }
 }
